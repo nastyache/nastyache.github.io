@@ -1,0 +1,280 @@
+html, body {height: 100%; width: 100%;}
+body {
+	background-image: url(lol.jpg);
+	background-repeat: repeat;
+	background-attachment: scroll;
+	width: 100%;
+	}
+@font-face {
+    font-family: OpenSansLight;
+    src: url('fonts/OpenSansLight.ttf');
+}
+/* меню */
+.WhiteSq {
+	position: absolute;
+    left: 0px;
+    top: 0px;
+	background: white;
+	width: 250px;
+    height: 100%;
+    box-shadow: 6px 0px 9px -8px #848484;
+    z-index: 100;
+    position: fixed;
+}
+.OrangeSq {
+	position: relative;
+    left: 0px;
+    top: 0px;
+	width: 250px;
+	height: 250px;
+	background: #e76700;
+}
+.MyName {
+	display: inline-block;
+	position: relative;
+	top: 100px;
+	left: 0px;
+	color: white;
+	text-align: center;
+	font-size: 25pt;
+	font-family: OpenSansLight; 
+}
+.Designer {
+	display: inline-block;
+	position: relative;
+	top: -25px;
+	left: 0px;
+	color: white;
+	text-align: center;
+	font-size: 13.5pt;
+	font-family: OpenSansLight;
+}
+.MenuSq {
+	position: relative;
+	width: 250px;
+	height: 150px;
+	top: 5px;
+	left: 0px;
+}
+.MenuLine {
+	position: relative;
+	width: 250px;
+	height: 50px;
+	top: 0px;
+	left: 0px;
+	border-bottom: 1px solid #d8d8d8;
+}
+.MenuLine:hover {
+	background: #f8f8f8;
+}
+.MenuLine1Icon {
+	position: relative;
+	width: 24px;
+	height: 24px;
+	top: 13px;
+	left: 30px;
+	background-image: url('icons/home.png');
+}
+.MenuLine2Icon {
+	position: relative;
+	width: 24px;
+	height: 24px;
+	top: 13px;
+	left: 30px;
+	background-image: url('icons/account.png');
+}
+.MenuLine3Icon {
+	position: relative;
+	width: 24px;
+	height: 24px;
+	top: 13px;
+	left: 30px;
+	background-image: url('icons/book-open.png');
+}
+.MenuLineText {
+	position: relative;
+	top: -7px;
+	left: 40px;
+	font-size: 18pt;
+	font-family: OpenSansLight;
+	text-align: left;
+	color: #9e9e9e;
+}
+/* меню конец */
+/* контакты */
+.MainText {
+	position: absolute;
+    left: 270px;
+    top: 250px;
+	width: 500px;
+    height: 500px;
+}
+.NameBig {
+	display: inline-block;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	color: #e76700;
+	text-align: center;
+	font-size: 50pt;
+	font-family: OpenSansLight; 
+}
+.Info {
+	position: relative;
+    left: 50px;
+    top: 10px;
+	padding-left: 10px;
+	border-left: 5px solid #d8d8d8;
+	width: 400px;
+}
+.Info1Icon {
+	position: relative;
+	width: 24px;
+	height: 24px;
+	top: 0px;
+	left: 0px;
+	background-image: url('icons/phone.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.Info2Icon {
+	position: relative;
+	width: 24px;
+	height: 24px;
+	top: 0px;
+	left: 0px;
+	background-image: url('icons/email.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.Info3Icon {
+	position: relative;
+	width: 24px;
+	height: 24px;
+	top: 0px;
+	left: 0px;
+	background-image: url('icons/vk.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.Info4Icon {
+	position: relative;
+	width: 24px;
+	height: 24px;
+	top: 0px;
+	left: 0px;
+	background-image: url('icons/arrow-down-bold-circle.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.InfoText {
+	position: relative;
+	left: 30px;
+	font-size: 18pt;
+	font-family: OpenSansLight;
+	color: black;
+}
+.VKlink:link {text-decoration: none; color:black;} 
+.VKlink:visited {text-decoration: none; color:black;} 
+.VKlink:active {text-decoration: none; color:black;}
+.VKlink:hover {text-decoration: none; color:black;}
+.MenuLink:link {text-decoration: none; color:#9e9e9e;} 
+.MenuLink:visited {text-decoration: none; color:#9e9e9e;} 
+.MenuLink:active {text-decoration: none; color:#9e9e9e;}
+.MenuLink:hover {text-decoration: none; color:#9e9e9e;}
+/* контакты конец */
+/* обо мне */
+.TopText {
+	position: absolute;
+	top: 0px;
+	left: 250px;
+	width: 100%;
+	height: 120px;
+	background: #e76700; 
+	z-index: 10;
+	font-size: 50pt;
+	font-family: OpenSansLight;
+	color: white;
+	padding-left: 20px;
+	padding-top: 130px;
+}
+.MainText2 {
+	position: absolute;
+    left: 270px;
+    top: 270px;
+	width: 700px;
+    height: 120%;
+}
+.Resume1Icon {
+	position: relative;
+	width: 700px;
+	height: 24px;
+	top: 0px;
+	left: 0px;
+	background-image: url('icons/clipboard-account.png');
+	background-repeat: no-repeat;
+	padding-bottom: 5px;
+	border-bottom: 2px solid #d8d8d8;
+}
+.Resume2Icon {
+	position: relative;
+	width: 700px;
+	height: 24px;
+	top: 0px;
+	left: 0px;
+	background-image: url('icons/school.png');
+	background-repeat: no-repeat;
+	padding-bottom: 5px;
+	border-bottom: 2px solid #d8d8d8;
+	margin-top: 30px;
+}
+.Resume3Icon {
+	position: relative;
+	width: 700px;
+	height: 24px;
+	top: 0px;
+	left: 0px;
+	background-image: url('icons/desktop-mac.png');
+	background-repeat: no-repeat;
+	padding-bottom: 5px;
+	border-bottom: 2px solid #d8d8d8;
+	margin-top: 30px;
+}
+.Resume4Icon {
+	position: relative;
+	width: 700px;
+	height: 24px;
+	top: 0px;
+	left: 0px;
+	background-image: url('icons/checkbox-multiple-marked.png');
+	background-repeat: no-repeat;
+	padding-bottom: 5px;
+	border-bottom: 2px solid #d8d8d8;
+	margin-top: 30px;
+}
+.Zagolovok{
+	position: relative;
+	top: -3px;
+	left: 40px;
+	font-size: 18pt;
+	font-family: OpenSansLight;
+	color: black;
+}
+.LeftText {
+	position: relative;
+	top: 0px;
+	left: 40px;
+	font-size: 18pt;
+	font-family: OpenSansLight;
+	text-align: right;
+	vertical-align: top;
+	width: 120px;
+}
+.RightText {
+	position: relative;
+	left: 60px;
+	font-size: 18pt;
+	font-family: OpenSansLight;
+	width: 500px;
+	text-align: left;
+}
