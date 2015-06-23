@@ -184,18 +184,27 @@ body {
 .MenuLink:hover {text-decoration: none; color:#9e9e9e;}
 /* контакты конец */
 /* обо мне */
-.TopText {
+.TopBox {
 	position: absolute;
 	top: 0px;
-	left: 250px;
+	left: 0px;
+	height: 250px;
 	width: 100%;
-	height: 120px;
 	background: #e76700; 
+	z-index: 10;
+	font-size: 50pt;
+}
+.TopText {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	height: 120px;
+	width: 300px; 
 	z-index: 10;
 	font-size: 50pt;
 	font-family: OpenSansLight;
 	color: white;
-	padding-left: 20px;
+	padding-left: 270px;
 	padding-top: 130px;
 }
 .MainText2 {
@@ -278,3 +287,32 @@ body {
 	width: 500px;
 	text-align: left;
 }
+/* обо мне конец */
+/* портфолио */
+.PicBox {
+	position: absolute;
+	width: 70%;
+	height: 100%;
+	left: 270px;
+	top: 270px;
+	float: left;
+}
+.Port {
+	position: relative;
+	width: 250px;
+	height: 250px;
+	margin: 20px;
+	border: 5px solid white;
+	-webkit-transition-duration: 0.5s; /*Webkit: длительность анимации*/
+	-moz-transition-duration: 0.5s; /*Mozilla: длительность анимации*/
+	-o-transition-duration: 0.5s; /*Opera: длительность анимации*/
+}
+
+.Port:hover{
+	-webkit-transform:scale(2); /*Webkit: увеличиваем размер до 1.2x*/
+	-moz-transform:scale(1.1); /*Mozilla: масштабирование*/
+	-o-transform:scale(1.1); /*Opera: масштабирование*/
+	box-shadow:0px 0px 30px gray; /*CSS3 тени: 30px размытая тень вокруг всего изображения*/
+	z-index: 200;
+}
+
