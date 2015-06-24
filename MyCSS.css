@@ -310,8 +310,8 @@ body {
 
 .Port:hover{
 	-webkit-transform:scale(2); /*Webkit: увеличиваем размер до 1.2x*/
-	-moz-transform:scale(1.1); /*Mozilla: масштабирование*/
-	-o-transform:scale(1.1); /*Opera: масштабирование*/
+	-moz-transform:scale(2); /*Mozilla: масштабирование*/
+	-o-transform:scale(2); /*Opera: масштабирование*/
 	box-shadow:0px 0px 30px gray; /*CSS3 тени: 30px размытая тень вокруг всего изображения*/
 	z-index: 200;
 }
