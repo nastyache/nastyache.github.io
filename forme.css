@@ -306,7 +306,7 @@ li {
 .Page3 {
 	position: absolute;
 	width: 100%;
-	height: 2000px;
+	min-height: 100%;
 	top: 1940px;
 	left: 0px;
 	background-color: white;
