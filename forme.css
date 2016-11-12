@@ -28,7 +28,7 @@ ul {
 	font-family: OpenSansLight;
 	font-size: 20pt;
 	color: #1F0033;
-  	padding-right: 180px;
+  	padding-right: 20px;
   	list-style: none;
   	float: right;
   	margin-top: 0px;
@@ -53,6 +53,13 @@ li {
 	float: left;
 	margin-left: 5px;
 	color: #1F0033;
+}
+.rueng {
+	float: left;
+	margin-left: 50px;
+	font-family: OpenSansLight;
+	font-size: 12pt;
+	color: #D4145A;
 }
 /* конец меню */
 /* начало приветствия */
@@ -141,7 +148,7 @@ li {
 	margin-left:auto;
 	margin-right: auto;
 	width: 300px;
-	margin-top: 10px;
+	margin-top: 30px;
 }
 .Info1Icon {
 	position: relative;

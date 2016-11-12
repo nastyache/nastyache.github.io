@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Anastasia Kulikova | Designer</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="forme.css">
+	<script src="jquery-1.11.3.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		$("#menu").on("click","a", function (event) {
+		//отменяем стандартную обработку нажатия по ссылке
+		event.preventDefault();
+		//забираем идентификатор бока с атрибута href
+		var id = $(this).attr('href'),
+		//узнаем высоту от начала страницы до блока на который ссылается якорь
+		top = $(id).offset().top;
+		//анимируем переход на расстояние - top за 1500 мс
+		$('body,html').animate({scrollTop: top-80}, 1000);
+		});
+		});
+	</script>
+</head>
+<body>
+	<!-- шапка -->
+	<div class="header"> 
+  		<nav id="menu">
+   			<div class="Name"><a href="#n0" class="ancLinks"><b>ANASTASIA</b></a></div>
+    		<div class="Name2"><a href="#n0" class="ancLinks"><b>KULIKOVA</b></a></div>    
+    		<ul>
+      			<li><a href="#n1" class="ancLinks">CONTACTS</a></li>
+      			<li><a href="#n2" class="ancLinks">ABOUT ME</a></li>
+      			<li><a href="#n3" class="ancLinks">PORTFOLIO</a></li>
+				<li><a href="index.html" class="rueng">Ru/Eng</a></div>
+   			</ul>
+  		</nav>
+	</div>
+	<!-- блок MY NAME -->
+	<div class="RedLine" id="n0"> 
+		<div class="Hello"><b>HELLO, MY NAME IS ANASTASIA KULIKOVA</b></div>
+		<div class="Designer">graphic designer</div>
+	</div>
+	<!-- блок для мигающих квадратов -->
+	<div class="BigLine">
+		<div id="container" class="brick"></div>
+	</div>
+	<!-- разделитель КОНТАКТЫ --> <!-- якорь -->
+	<div class="SlimLine1" id="n1"> 
+		<div class="Title"><b>CONTACTS</b></div> 
+		<div class="Line1"></div>
+	</div>
+	<!-- раздел контактов -->
+	<div class="Page1"> 
+		<div class="Info">
+			<table>
+				<tr>
+					<td class="Info1Icon"></td><td class="InfoText">nastya8868</td>
+				</tr>
+				<tr>
+					<td class="Info2Icon"></td><td class="InfoText">nas.kulikova@gmail.com</td>
+				</tr>
+				<tr>
+					<td class="Info3Icon"></td><td class="InfoText"><a class="VKlink" href="https://vk.com/id1128881" target="_blank">vk.com/id1128881</a></td>
+				</tr>
+				<tr>
+					<td class="Info4Icon"></td><td class="InfoText"><a class="VKlink" href="Chervyakova AO Designer.pdf" target="_blank">download&nbsp;CV</a> </td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<!-- разделитель ОБО МНЕ --> <!-- якорь -->
+	<div class="SlimLine2" id="n2"> 
+		<div class="Title"><b>ABOUT ME</b></div> 
+		<div class="Line1"></div>
+	</div>
+	<!-- раздел Резюме -->
+	<div class="Page2">
+		<div class="MainText">	
+			<div class="Resume1Icon">
+				<div class="Zagolovok"><b>ЛИЧНАЯ&nbsp;ИНФОРМАЦИЯ</b></div>
+			</div>		
+			<table>
+				<tr>
+					<td class="LeftText">Name</td><td class="RightText">Kulikova Anastasia</td>
+				</tr>
+				<tr>
+					<td class="LeftText">Skype</td><td class="RightText">nastya8868</td>
+				</tr>
+				<tr>
+					<td class="LeftText">E-mail</td><td class="RightText">nas.kulikova@gmail.com</td>
+				</tr>
+			</table>
+			<div class="Resume2Icon">
+				<div class="Zagolovok"><b>EDUCATION</b></div>
+			</div>		
+			<table>
+				<tr>
+					<td class="LeftText">2009-2014</td><td class="RightText">Printing Production Technology in Federal State Autonomous Educational Institution of Higher Education «Ural Federal University named after the first President of Russia B.N.Yeltsin», Institute of Radioelectronics and Information Technologies</td>
+				</tr>
+			</table>
+			<div class="Resume3Icon">
+				<div class="Zagolovok"><b>WORK&nbsp;EXPERIENCE</b></div>
+			</div>
+			<table>
+				<tr>
+					<td class="LeftText">2014-н.в.</td><td class="RightText">Graphic Designer (freelance)</td>
+				</tr>
+			</table>
+			<div class="Resume4Icon">
+				<div class="Zagolovok"><b>SKILLS</b></div>
+			</div>
+			<table>
+				<tr>
+					<td class="LeftText">Languages</td><td class="RightText">Russian (native)</td>
+				</tr>
+				<tr>
+					<td class="LeftText"></td><td class="RightText">English (С1)</td>
+				</tr>
+				<tr>
+					<td class="LeftText"></td><td class="RightText">German (A2)</td>
+				</tr>
+				<tr>
+					<td class="LeftText">Tools</td><td class="RightText">Adobe&nbsp;Photoshop, Adobe&nbsp;InDesign, Adobe&nbsp;Illustrator, Adobe&nbsp;Acrobat, Adobe&nbsp;Muse</td>
+				</tr>
+				<tr>
+					<td class="LeftText">Professional Skills</td><td class="RightText">Developing design concepts, creating corporate identities, photo re-touching, color correcting, image enhancement and preparing files for printer release, basic knowledge of the Web design</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<!-- разделитель ПОРТФОЛИО --> <!-- якорь -->
+	<div class="SlimLine3" id="n3">
+		<div class="Title"><b>PORTFOLIO</b></div> 
+		<div class="Line1"></div>
+	</div>
+	<!-- раздел Портфолио -->
+	<div class="Page3">
+		<div class="PicBox">
+		<div class="Gallery">
+	    	<img class="Port" src="portfolio/Port1.jpg" alt="Calendar"></img>
+	    	<img class="Port" src="portfolio/Port2.jpg" alt="Calendar"></img>
+	    	<img class="Port" src="portfolio/Port3.jpg" alt="Calendar"></img>
+	    	<img class="Port" src="portfolio/Port4.jpg" alt="Book cover"></img>
+	    	<img class="Port" src="portfolio/Port5.jpg" alt="Book"></img>
+	    	<img class="Port" src="portfolio/Port6.jpg" alt="Book"></img>
+	    	<img class="Port" src="portfolio/Port7.jpg" alt="Poster"></img>
+	    	<img class="Port" src="portfolio/Port8.jpg" alt="Poster"></img>
+	    	<img class="Port" src="portfolio/Port9.jpg" alt="Poster"></img>
+	    	<img class="Port" src="portfolio/Port10.jpg" alt="Poster"></img>
+	    	<img class="Port" src="portfolio/Port11.jpg" alt="Poster"></img>
+	    	<img class="Port" src="portfolio/Port12.jpg" alt="Poster"></img>
+	    	<img class="Port" src="portfolio/Port13.jpg" alt="Poster"></img>
+	    	<img class="Port" src="portfolio/Port14.jpg" alt="Poster"></img>
+	    	<img class="Port" src="portfolio/Port15.jpg" alt="Souvenirs"></img>
+	    	<img class="Port" src="portfolio/Port16.jpg" alt="Souvenirs"></img>
+	    	<img class="Port" src="portfolio/Port17.jpg" alt="Packaging"></img>
+	    	<img class="Port" src="portfolio/Port18.jpg" alt="Packaging"></img>
+	    	<img class="Port" src="portfolio/Port19.jpg" alt="Packaging"></img>
+	    	<img class="Port" src="portfolio/Port20.jpg" alt="Packaging"></img>
+			<img class="Port" src="portfolio/Port21.jpg" alt="Poster"></img>
+			<img class="Port" src="portfolio/Port22.jpg" alt="Poster"></img>
+		</div>
+		</div>
+		<!-- футер -->
+		<div class="Poka"><b>For all questions and suggestions</b><br>nas.kulikova@gmail.com</div> 
+		<div class="Poka2">&copy; 2016&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+	</div>
+
+	<script type="text/javascript">
+		var colors = ['#9f023a', '#bd047a', '#940470', '#8339a1', '#bf5de7'];
+		var container = document.getElementById("container");
+		var style = document.createElement('style');
+		var pic = ['icons/i1.png', 'icons/i2.png', 'icons/i3.png', 'icons/i4.png', 'icons/i5.png', 'icons/i6.png', 'icons/i7.png', 'icons/i8.png',]
+		style.type = 'text/css';
+		style.innerHTML = '';
+		for (var i = 0; i < 1000; i++) {
+			container.innerHTML += '<div class="square-'+ (i+1) +'"></div>';
+			var random_color = colors[Math.floor(Math.random() * colors.length)];
+			
+			style.innerHTML += '.square-'+(i+1)+' { position: relative; width:30px; height:30px; background-color:#1F0033; display: inline-block;} .square-'+(i+1)+':hover {background-color:'+random_color+';}' ;
+			if (Math.random() > 0.9) {
+				var random_pic = pic[Math.floor(Math.random() * pic.length)];
+				style.innerHTML += '.square-'+(i+1)+':hover { background-image: url('+random_pic+'); }';
+			}
+		}
+		document.getElementsByTagName('body')[0].appendChild(style);
+	</script>
+
+</body>
+</html>
